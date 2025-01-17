@@ -1,0 +1,20 @@
+8.Cultura devOps dentro do projeto 
+8.1 Pipeline de CI/CD  
+Realizar um Pipeline de CI/CD durante o desenvolvimento de uma aplicação web foi uma das etapas mais vitais do projeto, com o intuito de automatizar as fases de integração, testes e implementação. O objetivo principal era garantir que a aplicação fosse desenvolvida de maneira rápida, eficiente e sem erros, utilizando o GitHub para controle de versões e Node.js como tecnologia de backend. A seguir, irei detalhar o procedimento adotado para a construção e operação do pipeline, enfatizando a utilização dessas duas tecnologias fundamentais.
+
+Tecnologias e Ferramentas Utilizadas
+
+GitHub: Utilizado como repositório de código e plataforma de automação de CI/CD, por meio da integração com o GitHub Actions, que é o serviço de automação nativo do GitHub.
+Node.js: Framework escolhido para desenvolver a seção de backend da aplicação, sendo responsável por executar a lógica do servidor e para interagir com o banco de dados.
+
+Fases do Pipeline de CI/CD
+O GitHub Actions foi configurado para automatizar todo o ciclo de integração e entrega contínua, eliminando a necessidade de intervenção manual em cada etapa. A seguir, apresento as fases principais do pipeline:
+
+Commit no Repositório do GitHub:
+O pipeline era iniciado de maneira automática sempre que um desenvolvedor realizava um commit no repositório do projeto hospedado no GitHub. Isso garantiu que, a cada alteração no código, o processo de integração contínua fosse iniciado automaticamente, sem necessidade de qualquer ação manual.
+
+Build e Instalação de Dependências (Node.js):
+A etapa inicial do pipeline foi o processo de build. O código era compilado desde o repositório, e as dependências do Node.js eram instaladas automaticamente através do comando npm install. O Node.js foi selecionado como a tecnologia para o backend da aplicação, e a instalação das dependências ocorreu diretamente no ambiente preparado pelo GitHub Actions. Isso incluiu as bibliotecas essenciais à operação da aplicação, como Express (para gerenciamento do servidor) e outras dependências necessárias para interagir com o banco de dados e o frontend.
+Execução de Testes Automatizados:
+Os testes garantiam que as funcionalidades do app funcionassem de maneira adequada, englobando desde o tratamento das requisições no backend até a comunicação com o banco de dados. Caso algum teste falhasse, o pipeline era interrompido e o desenvolvedor era notificado para corrigir a falha antes de prosseguir com a implementação.
+
