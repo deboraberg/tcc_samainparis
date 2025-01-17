@@ -1,0 +1,175 @@
+05 Fundação teorica
+DevOps é uma filosofia cujo objetivo central é eliminar a competição entre as equipes de desenvolvimento e as de operações e infraestrutura. Se você não está familiarizado com o setor de Tecnologia da Informação (TI), é importante entender que, por muitos anos, as organizações mantiveram distintas as áreas de Desenvolvimento de Software e as de Operação e Infraestrutura de Sistemas. A equipe de Desenvolvimento cria produtos que são implantados em servidores, computadores e na nuvem, os quais são suportados pelas equipes de Operação.
+Lamentavelmente, por terem sempre funcionado como entidades distintas, surgiu uma espécie de animosidade entre elas. A equipe de Desenvolvimento critica a equipe de Operações por ser morosa, excessivamente cautelosa e obstruir o progresso dos programas. Por outro lado, a equipe de Operações vê a equipe de Desenvolvimento como despreparada, sem compreensão do ambiente e ineficaz. Essa situação prevaleceu durante anos até que perceberam o que agora parece claro. Uma área depende completamente da outra e não conseguem operar de forma independente. Foi nesse cenário que nasceu a ideia de DevOps.
+A meta principal é unir os grupos responsáveis pelo desenvolvimento e pela operação de software, com o intuito de atender rapidamente e com qualidade às demandas dos clientes de tecnologia da informação. Devops compreende a utilização de ideias, métodos e ferramentas que aprimoram a habilidade de uma organização de oferecer produtos e serviços de maneira eficaz e com eficiência. Ademais, isso influencia a interação entre as equipes de Desenvolvimento e Operações, promovendo uma cultura colaborativa entre os especialistas dessas áreas.
+Existem diversas vantagens ao implementar a cultura DevOps. Algumas delas incluem:
+
+Harmonia entre setores que precisam trabalhar em conjunto 
+Integração entre profissionais, equipes, grupos e departamentos 
+Aprimoramento da qualidade dos serviços e produtos disponibilizados 
+Redução do intervalo entre a concepção da ideia ou pedido do cliente e a finalização da entrega 
+Aumento na confiabilidade, segurança e capacidade de expandir tanto do produto final quanto da infraestrutura que o sustenta 
+Troca de conhecimento e aprimoramento contínuo de todos os participantes 
+
+Desvantagens do DevOps
+Nem tudo são vantagens. Existem alguns aspectos que merecem atenção ao se considerar o DevOps:
+
+A complexidade tende a crescer, já que gerenciar setores isolados é bem mais simples do que fazê-lo de forma integrada.
+Enfrentar a situação de gestores que não terão "total controle" sobre suas equipes.
+As limitações das pessoas, visto que o mundo da tecnologia da informação é vasto. Esperar que indivíduos sejam especialistas em Cobol, Java, Python, Kubernetes, Banco de Dados, Jenkins, Docker, Nuvem e Inteligência Artificial é um tanto irreal.
+O custo da automação pode ser elevado, pois, além dos investimentos em ferramentas, é necessário considerar o custo do aprendizado para utilizá-las.
+
+CI/CD: Conceito e Aplicações
+
+Visão Geral do CI/CD
+
+CI/CD, que significa Integração Contínua (CI) e Entrega Continua/Implantação Contínua (CD), são métodos fundamentais no desenvolvimento de software contemporâneo. Estas abordagens têm como objetivo aprimorar a qualidade do código, otimizar o tempo de desenvolvimento e assegurar que as alterações no código sejam implementadas de forma ágil e contínua. A implementação de CI/CD tornou-se uma parte vital do ciclo de vida do software, especialmente em contextos ágeis, automatização e DevOps.
+
+Integração Contínua (CI)
+Integração Contínua é uma abordagem que envolve a junção frequente (tipicamente múltiplas vezes ao dia) do código criado por diferentes desenvolvedores em um repositório comum. O objetivo principal desta prática é identificar e resolver rapidamente problemas de integração, o que pode incluir conflitos de código, falhas em dependências ou erros introduzidos ao longo do desenvolvimento.
+
+Os elementos principais da CI são:
+
+Repositório de código unificado: Os desenvolvedores realizam o "commit" de suas alterações em um repositório centralizado.
+Automatização de compilações e testes: Sempre que há um commit no repositório, o processo de compilação do código e a execução de testes automáticos são acionados. Isso assegura que, se um novo código comprometer a funcionalidade existente, o problema será detectado rapidamente.
+Retorno imediato: Os desenvolvedores recebem retorno instantâneo sobre o status do código, permitindo a correção rápida de falhas.
+Ferramentas populares de CI incluem Jenkins, CircleCI, GitLab CI e Travis CI.
+
+Entrega Contínua (CD) e Implantação Contínua (CD)
+Apesar de frequentemente serem usados como sinônimos, existem diferenças sutis entre Entrega Contínua e Implantação Contínua:
+
+Entrega Contínua: Refere-se à prática de manter o código em um estado que possa ser liberado para produção a qualquer momento. Isso significa que, após a realização bem-sucedida de testes automáticos e verificação da qualidade do código, o código está pronto para implantação, porém ainda requer ação manual para a sua efetiva implementação.
+
+Implantação Contínua: Esta é uma expansão da entrega contínua, onde a implantação em produção é inteiramente automatizada. Assim, toda vez que uma modificação é integrada ao repositório e aprovada nos testes, ela é implantada automaticamente em produção, sem necessidade de intervenção manual.
+
+Essas abordagens auxiliam as equipes na rápida e confiante liberação de novas funcionalidades, garantindo que quaisquer erros sejam rapidamente detectados e corrigidos.
+
+Ferramentas comuns de CD incluem Spinnaker, Jenkins, GitLab CI/CD, Bamboo, entre outras.
+
+Embora não se classifique como uma verdadeira ferramenta de CI/CD, o Kubernetes tornou-se imprescindível em cenários de implementação contínua, especialmente no contexto de contêineres. Kubernetes é um sistema de gerenciamento de contêineres que facilita a instalação, o dimensionamento e a supervisão de aplicativos empacotados em contêineres. Ele proporciona aos desenvolvedores e às equipes de operações uma forma mais eficaz de gerenciar a infraestrutura, permitindo o escalonamento automático dos aplicativos conforme necessário e garantindo disponibilidade constante.
+
+Vantagens do CI/CD
+
+Implementar CI/CD traz diversos benefícios para as equipes de desenvolvimento, tais como:
+
+Identificação rápida de falhas: Através da aplicação de testes automatizados e da integração regular do código, falhas podem ser descobertas precocemente no ciclo de desenvolvimento, economizando tempo e esforço na resolução.
+
+Manutenção da qualidade do código: Ao adotar testes automáticos e avaliações de qualidade durante todas as fases do processo de desenvolvimento, as equipes asseguram que o código entregue mantenha um alto padrão.
+
+Maior automação e produtividade: CI/CD diminui a necessidade de intervenções manuais e ajuda a reduzir erros cometidos por pessoas. Ademais, permite que as equipes se dediquem mais à criação de novas funcionalidades e menos a tarefas de construção e implantação repetitivas.
+Implementação ágil de novas funcionalidades: Com a automação nos procedimentos de implantação, as organizações conseguem lançar novas funcionalidades, correções e atualizações de maneira muito mais rápida, proporcionando um valor mais imediato aos usuários.
+Minimização de riscos: A implementação regular de alterações pequenas diminui a probabilidade de grandes falhas, pois os problemas podem ser detectados e solucionados de forma ágil.
+A combinação de práticas como CI/CD e ferramentas como Docker, Git e Jenkins tem transformado a forma como o software é desenvolvido e entregue. Essas abordagens promovem maior eficiência, qualidade e colaboração entre equipes de desenvolvimento e operações, resultando em ciclos de desenvolvimento mais rápidos e aplicações mais confiáveis. Ao adotar essas ferramentas e práticas, as equipes podem garantir que entreguem valor de maneira contínua e sem interrupções, atendendo às necessidades do mercado de forma ágil e eficiente.
+
+
+Desenvolvimento Ágil: Princípios, Scrum e Kanban
+
+A metodologia ágil é uma estratégia contemporânea e dinâmica para gerir projetos e desenvolver softwares, que prioriza a adaptabilidade, a cooperação e a entrega contínua de valor. Esta abordagem emergiu como uma resposta às metodologias tradicionais, que são mais inflexíveis e burocráticas, e conquistou ampla aceitação devido à sua eficácia em satisfazer as demandas em constante evolução de clientes e empresas. O Manifesto Ágil, criado em 2001 por um grupo de desenvolvedores, resume os fundamentos dessa metodologia, enfatizando a importância da colaboração entre as diferentes equipes, a entrega constante de novas funcionalidades e a rápida adaptação a alterações.
+
+No âmbito do desenvolvimento ágil, existem várias metodologias e estruturas que tornam mais fácil a aplicação desses fundamentos. Entre as mais conhecidas, destacam-se Scrum e Kanban, dois dos métodos mais amplamente utilizados para administrar e estruturar o trabalho de forma ágil.
+Princípios do Desenvolvimento Ágil  
+Antes de explorarmos Scrum e Kanban, é fundamental entender os princípios essenciais do desenvolvimento ágil, que servem como alicerce para qualquer método ágil. O Manifesto Ágil é constituído por quatro valores centrais e doze princípios que orientam todas as abordagens ágeis:
+
+Valores do Manifesto Ágil:  
+Indivíduos e interações são mais importantes que processos e ferramentas: A ênfase está nas pessoas e na colaboração entre elas, em vez de seguir processos inflexíveis ou depender excessivamente de ferramentas.  
+Software funcionando é mais importante que documentação extensa: O foco principal é entregar software que opere adequadamente e atenda às expectativas do usuário, em vez de dedicar tempo em demasia a documentação detalhada.  
+Colaboração com o cliente é preferível à negociação de contratos: Trabalhar em conjunto com o cliente durante todo o processo é mais valioso do que seguir rigidamente termos contratuais, permitindo ajustes conforme novas necessidades surgem.  
+Adaptar-se a mudanças é mais importante que seguir um plano: O desenvolvimento ágil valoriza a habilidade de se adaptar rapidamente a mudanças, em vez de se apegar a um plano fixo.
+
+Princípios Ágeis:  
+Satisfação do cliente: O objetivo é oferecer ao cliente valor contínuo e funcionalidades úteis.  
+Mudanças são aceitas: Alterações nos requisitos, mesmo nas etapas finais do desenvolvimento, são bem-vindas e vistas como uma chance de aprimorar o produto.  
+Entrega frequente: O software deve ser entregue de forma regular, em ciclos curtos, para permitir resposta rápida ao feedback.  
+Colaboração entre as equipes: Equipes multifuncionais colaboram closely para aumentar a eficiência e a criatividade.  
+Simplicidade: Manter a simplicidade é crucial, evitando complicações desnecessárias no design e nas soluções.  
+Reflexão contínua: As equipes precisam frequentemente avaliar suas práticas de trabalho e buscar maneiras de evoluir.  
+
+Scrum: O Framework Ágil por Excelência  
+Scrum é um dos frameworks mais conhecidos e amplamente adotados no desenvolvimento ágil, especialmente para equipes envolvidas em projetos complexos e iterativos, como o desenvolvimento de software. Concebido por Ken Schwaber e Jeff Sutherland, o Scrum oferece um conjunto de práticas, funções e artefatos para gerenciar projetos de maneira incremental e cíclica.
+
+Elementos do Scrum  
+Papéis no Scrum  
+
+Product Owner (PO): A pessoa encarregada de definir a visão do produto e gerenciar o backlog. O PO prioriza as funcionalidades e assegura que a equipe de desenvolvimento trabalhe nas tarefas que são mais relevantes para o cliente.  
+Scrum Master: Este profissional atua como facilitador do processo Scrum. Ele é responsável por remover barreiras que possam impedir a equipe de alcançar seus objetivos e garantir que os princípios e práticas do Scrum sejam seguidos.  
+Equipe de Desenvolvimento: Os integrantes que constroem o produto. Essa equipe é autossuficiente e multidisciplinar, possuindo todas as habilidades necessárias para oferecer uma funcionalidade completa.  
+Artefatos do Scrum 
+Lista de Pendências do Produto: Um compêndio organizado de todos os requisitos do produto, hierarquizado de acordo com o benefício para o cliente e a empresa. O responsável por gerenciar e atualizar essa lista é o Product Owner.
+
+Lista de Pendências da Sprint: Um conjunto de tarefas que serão executadas ao longo de uma sprint. Essa lista é originada a partir da lista de pendências do produto, focando nas prioridades estabelecidas.
+
+Incremento: O resultado visível da sprint, representando uma versão do produto que foi completada e que pode ser possivelmente entregue ao cliente. Cada incremento precisa ser funcional e de alta qualidade.
+
+Atividades do Scrum
+
+Sprint: A sprint é o núcleo do Scrum, sendo um ciclo de desenvolvimento de duração fixa, tipicamente de 2 a 4 semanas, durante o qual a equipe foca em entregar um incremento do produto. Ao término de cada sprint, o produto deve conter funcionalidades finalizadas que podem ser apresentadas aos envolvidos.
+
+Planejamento da Sprint: No planejamento da sprint, a equipe determina o que será realizado na próxima sprint, considerando os itens na lista de pendências do produto e as prioridades mais relevantes.
+
+Reunião Diária (ou Stand-up): Um encontro diário, que dura no máximo 15 minutos, onde a equipe comunica o que foi feito no dia anterior, o que será feito no dia atual e discute qualquer obstáculo.
+
+Revisão da Sprint: Ao final de cada sprint, a equipe se encontra com os envolvidos para apresentar o que foi alcançado e discutir o avanço do produto.
+
+Retrospectiva da Sprint: Um encontro onde a equipe avalia o processo da sprint, reconhece o que teve bom funcionamento e o que precisa ser aprimorado, além de elaborar um plano de ação para a próxima sprint.
+
+Vantagens do Scrum
+
+Entrega rápida de valor: O Scrum possibilita entregas regulares e incrementais, assegurando que o cliente receba funcionalidades de forma ágil.
+
+Transparência e colaboração: A comunicação contínua entre todos os participantes do projeto facilita a transparência e o trabalho em equipe.
+
+Adaptabilidade: O Scrum permite ajustes de rumo de maneira simples, respondendo rapidamente a novas informações e requisitos.
+Kanban: Um Fluxo Constante de Trabalho
+Kanban é uma metodologia visual e adaptável para a gestão de tarefas, priorizando um fluxo ininterrupto de atividades. Originado no setor de produção (particularmente na Toyota), foi posteriormente modificado para ser utilizado no desenvolvimento de software e em equipes ágeis.
+
+Diferente do Scrum, que utiliza intervalos de tempo definidos (conhecidos como sprints), o Kanban se concentra na administração contínua do fluxo de trabalho, sem imposições temporais. Esta abordagem é ideal para grupos que enfrentam tarefas com diferentes níveis de prioridade e onde a adaptabilidade é crucial.
+
+Componentes do Kanban
+Painel Kanban: O Painel Kanban fornece uma visualização do andamento do trabalho, onde as tarefas se deslocam de coluna em coluna à medida que progridem. As colunas representam variados estágios do processo, como "A Fazer", "Em Andamento" e "Finalizado". As equipes têm a liberdade de ajustar as colunas para se adequar às fases do seu próprio fluxo de trabalho.
+
+Cartões Kanban: Cada tarefa é simbolizada por um cartão no painel. Os cartões são transferidos entre as colunas à medida que as tarefas evoluem. Além disso, esses cartões podem incluir detalhes sobre o trabalho a ser realizado, como descrições, responsáveis, prazos, entre outros.
+
+Restrições de Trabalho em Progresso (WIP - Work In Progress): O Kanban impõe limites para a quantidade de tarefas que podem estar em andamento simultaneamente em cada coluna. Esse recurso evita a sobrecarga de trabalho, assegurando que a equipe foque nas tarefas mais cruciais e que o fluxo de trabalho permaneça estável.
+
+Fluxo Constante: O Kanban opera com um fluxo contínuo em vez de ciclos de tempo fixos. As tarefas são finalizadas assim que possível e, ao invés de esperar pelo término de uma sprint, a equipe fornece valor de forma constante, conforme o trabalho se desenrola.
+
+Vantagens do Kanban
+Adaptabilidade: O Kanban é extremamente adaptável e pode ser facilmente moldado para qualquer tipo de equipe ou fluxo de trabalho.
+Visualização do progresso: O painel Kanban proporciona a todos os membros da equipe uma visão clara do que está sendo realizado, o que necessita ser feito e o que já foi concluído.
+Diminuição do tempo de ciclo: A limitação do WIP contribui para a redução do tempo de ciclo das tarefas, permitindo que sejam completadas mais rapidamente e promovendo um fluxo de trabalho contínuo.
+Considerações Finais: Scrum vs. Kanban
+Os frameworks Scrum e Kanban oferecem benefícios distintos e atendem a diferentes exigências:
+
+O Scrum é mais indicado para equipes que estão engajadas em projetos complexos e operam em um ritmo regular de entregas incrementais. É particularmente eficaz quando há necessidade de um ciclo de desenvolvimento bem definido (as sprints) e um ênfase robusta na colaboração e na entrega contínua. 
+O Kanban, por sua vez, se adapta melhor a grupos que desejam uma metodologia mais flexível e ininterrupta, focando no fluxo de tarefas e na visualização das atividades. Ele se mostra eficaz em situações onde as prioridades mudam com frequência ou quando as tarefas não seguem um padrão fixo.
+
+Ambas as abordagens podem ser aplicadas de forma bem-sucedida, levando em consideração a natureza do trabalho e a configuração da equipe; muitos negócios escolhem combinar os dois métodos em uma estratégia híbrida para atender de maneira mais eficaz às suas demandas. A essência do êxito no desenvolvimento ágil reside na constante adaptação ao retorno do cliente e na habilidade de aprimorar continuamente os processos internos.
+
+Tecnologias Utilizadas no Projeto: Site do Restaurante "Samba in Paris"
+
+A criação do site para o restaurante Samba in Paris foi planejada para capturar a essência da gastronomia francesa, ao mesmo tempo em que celebra a cultura vibrante e calorosa do Brasil. O estabelecimento, que serve pratos franceses tradicionais com um toque especial da culinária brasileira, necessitava de uma plataforma online que representasse essa singular combinação de estilos e tradições. A seleção das ferramentas tecnológicas foi essencial para desenvolver uma experiência digital sofisticada, cativante e fácil de usar para os visitantes. Para atingir essa meta, foram utilizados HTML, CSS, Java, Bootstrap e MySQL.
+
+A seguir, explicaremos como cada uma dessas tecnologias colaborou para a criação do site do Samba in Paris, além de como as cores, o design e a interação do usuário foram meticulosamente elaborados para refletir a atmosfera internacional e refinada do restaurante, enquanto prestam homenagem ao espírito brasileiro.
+
+HTML: A Estrutura do "Samba in Paris"
+O HTML formou a base para a construção da estrutura do site do restaurante Samba in Paris. Ele foi empregado para organizar de maneira clara as diversas seções do site, incluindo o cardápio, informações sobre o estabelecimento, a história do local e a área de contato. O uso do HTML possibilitou uma apresentação semântica e bem estruturada do conteúdo, o que melhora tanto a experiência do usuário quanto as tarefas de otimização para mecanismos de busca (SEO).
+
+O site apresenta páginas detalhadas sobre o cardápio, onde são destacados pratos tradicionais da culinária francesa, como Boeuf Bourguignon e Ratatouille, combinados com influências brasileiras, como Moqueca de Peixe. Existem também seções dedicadas ao restaurante, que explicam a fusão entre as influências culturais brasileira e francesa, e um formulário de contato que facilita a comunicação com os clientes.
+CSS: Estilo Elegante com Influências Brasileiras  
+A aparência visual do site foi meticulosamente elaborada para espelhar a essência do Samba in Paris. Com o uso de CSS, a intenção foi desenvolver um design requintado que, ao mesmo tempo, fosse convidativo, unindo a sofisticação da gastronomia francesa com a energia e a hospitalidade do Brasil. As cores predominantes selecionadas para o design foram vermelho, branco e dourado – uma combinação que evoca refinamento, entusiasmo e acolhimento, além de lembrar as bandeiras da França e do Brasil.
+
+O vermelho, uma cor intensa, representa a paixão e a vitalidade da culinária brasileira, enquanto o branco introduz sofisticação e transparência, simbolizando a simplicidade e o estilo da cozinha francesa. O dourado foi incorporado para proporcionar um toque de elegância, relacionado à alta gastronomia e ao fascínio da cidade de Paris.
+
+O layout foi concebido para ser moderno e sem excessos, utilizando uma tipografia sofisticada e elementos visuais que geram um ambiente requintado, mantendo, ao mesmo tempo, a acessibilidade.
+Java: Funcionalidades Dinâmicas no Backend  
+Para assegurar que o site oferecesse recursos dinâmicos, como um sistema de reservas na internet, implementamos Java no backend. O Java foi encarregado de gerenciar as reservas dos clientes, guardar as informações em um banco de dados MySQL e fornecer os dados necessários à equipe do restaurante.
+
+Ao conectar a lógica do negócio com o banco de dados, o Java ajudou a monitorar a disponibilidade de mesas, a inserir informações no sistema e a administrar as interações entre os usuários e o site. Isso garantiu que as reservas fossem realizadas de maneira eficiente, sem falhas, e que os dados estivessem sempre atualizados.
+Bootstrap: Design Responsivo e Funcional  
+O Bootstrap foi empregado para assegurar que o site se adaptasse a várias dimensões de tela, desde computadores de mesa até dispositivos móveis. Isso é essencial para um restaurante como o Samba in Paris, considerando que um grande número de clientes visita o site para consultar informações e realizar reservas por meio de seus celulares.  
+
+Graças ao Bootstrap, foi viável desenvolver um layout versátil e atraente, utilizando elementos prontos como botões, formulários, tabelas e um sistema de navegação responsiva, os quais foram facilmente incorporados ao site, agilizando o processo de criação sem comprometer a qualidade do design.
+MySQL: Sistema de Dados para Gerenciamento de Reservas e Dados  
+O MySQL foi empregado para guardar informações essenciais do restaurante, incluindo o registro de reservas, as opiniões dos clientes e as informações do cardápio. Como um sistema de gestão de banco de dados relacional, o MySQL ofereceu uma solução eficaz e confiável para estruturar esses dados, assegurando que o site permanecesse interativo e que as informações estivessem constantemente atualizadas. Conclusão: A Integração de Culturas no Portal do "Samba in Paris"
+
+O portal do Samba in Paris foi projetado com a fusão de tecnologias sólidas e um layout que representa a essência do estabelecimento: uma vivência culinária requintada, porém com um toque brasileiro. Empregando HTML, CSS, Java, Bootstrap e MySQL, desenvolvemos uma plataforma eficiente, contemporânea e esteticamente agradável, que proporciona aos usuários uma imersão na experiência exclusiva que é o restaurante Samba in Paris.
